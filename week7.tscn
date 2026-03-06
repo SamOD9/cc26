@@ -1,3 +1,18 @@
 [gd_scene format=3 uid="uid://c5sp16scbsq2"]
 
-[node name="Node2D" type="Node2D" unique_id=1695943652]
+[ext_resource type="PackedScene" uid="uid://cuyd1qv0pn26e" path="res://addons/midi/MidiPlayer.tscn" id="1_ko232"]
+[ext_resource type="Script" uid="uid://cc8fqqks8mrn0" path="res://week_7.gd" id="1_l1wo2"]
+
+[node name="week7" type="Node2D" unique_id=1695943652]
+script = ExtResource("1_l1wo2")
+
+[node name="MidiPlayer" parent="." unique_id=1950174829 instance=ExtResource("1_ko232")]
+soundfont = "res://assets/Aspirin-Stereo.sf2"
+
+[node name="Button" type="Button" parent="." unique_id=1945976892]
+offset_right = 12.0
+offset_bottom = 12.0
+text = "Play a note"
+
+[connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
+[connection signal="button_up" from="Button" to="." method="_on_button_button_up"]
