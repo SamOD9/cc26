@@ -31,7 +31,7 @@ The code uses MIDI to play notes through a soundfont player. Key things to know:
 - Notes are numbers 0-127 (middle C is 60)
 - Channel 9 is always drums
 - Channels 0-8 are melodic instruments
-- `play_note(note, duration, channel)` plays a note and waits
+- `play_note(note, duration, channel)` plays a note
 
 ---
 
@@ -87,6 +87,10 @@ There's no right answer — experiment and see what sounds good.
 Currently the slider controls which note plays when you press the button. Modify the code so the slider controls the **tempo** of the drum loop instead — i.e. the duration between notes.
 
 You'll need to store the tempo in a variable that your loop reads each time around
+
+Bonus idea!!!!
+Draw a 2D grid on the screen 12 x 12. make the cells different colors using HSV. As you move the mouse around, it plays a different note. Have it go up 12 notes every row and up and  down a single note every column 
+
 
 - Make a final audio recording and upload the file to Brightspace. Also a zip of your project
 

@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://b6ugr2m2banmu"]
+
+[ext_resource type="Script" uid="uid://bwa6hooma0bk3" path="res://week_7a.gd" id="1_qslw2"]
+[ext_resource type="FontFile" uid="uid://0jk2p2kfmllu" path="res://fonts/Hyperspace Bold.otf" id="2_4eyg7"]
+[ext_resource type="PackedScene" uid="uid://cuyd1qv0pn26e" path="res://addons/midi/MidiPlayer.tscn" id="3_dyjop"]
+
+[node name="week7a" type="Node2D" unique_id=202371310]
+script = ExtResource("1_qslw2")
+font = ExtResource("2_4eyg7")
+
+[node name="MidiPlayer" parent="." unique_id=1962151564 instance=ExtResource("3_dyjop")]
+soundfont = "res://assets/Aspirin-Stereo.sf2"

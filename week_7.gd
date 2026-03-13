@@ -19,8 +19,19 @@ func drum_loop():
 			play_note(pattern[i] , 0.2, 9) 
 			await get_tree().create_timer(0.25).timeout
 
+func melody_loop():
+	for i in range(16):
+		pattern.append(randi_range(36, 60))
+	
+	while true:
+		for i in range(pattern.size()):
+			play_note(pattern[i] , 0.2, 0) 
+			await get_tree().create_timer(0.25).timeout
+
 func _ready() -> void:
 	drum_loop()
+	melody_loop()
+	print("AFter drum loop")
 	#change_instrument(0, 30)
 	#while true:
 		#for i in range(2):
