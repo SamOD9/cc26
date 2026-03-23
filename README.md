@@ -28,7 +28,7 @@ Greetings fellow octopus
 
 ### Part 1
 
-- Create a NEW git  with a new Godot project in it. 
+- Create a NEW git repo with a NEW Godot project in it. 
 - Put it on github
 - Make edits to the local files
 - Commit and push them
